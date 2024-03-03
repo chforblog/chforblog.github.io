@@ -6,15 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives | Hexo</title>
+  <title>日记2024.3.3 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/index.html">
+  <meta name="description" content="2024.3.3日记编程学习Markdown 语法 排序 字体：helloworld  helloworld 不是helloword  引用   分割线（剪切线）还在go     好康的 public class hello&#123;    public static main(String[] args)&#123;         System.out.print(&quot;hello,w">
+<meta property="og:type" content="article">
+<meta property="og:title" content="日记2024.3.3">
+<meta property="og:url" content="http://example.com/2024/03/03/%E6%97%A5%E8%AE%B02024-3-3/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="2024.3.3日记编程学习Markdown 语法 排序 字体：helloworld  helloworld 不是helloword  引用   分割线（剪切线）还在go     好康的 public class hello&#123;    public static main(String[] args)&#123;         System.out.print(&quot;hello,w">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="c:\Users\123\Desktop\1.jpg">
+<meta property="article:published_time" content="2024-03-03T08:43:10.000Z">
+<meta property="article:modified_time" content="2024-03-03T09:25:22.779Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:\Users\123\Desktop\1.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,130 +156,208 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-日记2024-3-3" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      日记2024.3.3
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2024" class="archive-year">2024</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2024/03/03/%E6%97%A5%E8%AE%B02024-3-3/" class="archive-article-date">
+
+        
+        <a href="/2024/03/03/%E6%97%A5%E8%AE%B02024-3-3/" class="archive-article-date">
   	<time datetime="2024-03-03T08:43:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-03-03</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2024/03/03/%E6%97%A5%E8%AE%B02024-3-3/">日记2024.3.3</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="2024-3-3日记"><a href="#2024-3-3日记" class="headerlink" title="2024.3.3日记"></a>2024.3.3日记</h1><h2 id="编程学习"><a href="#编程学习" class="headerlink" title="编程学习"></a>编程学习</h2><h3 id="Markdown-语法"><a href="#Markdown-语法" class="headerlink" title="Markdown 语法"></a>Markdown 语法</h3><ol>
+<li>排序</li>
+<li>字体：<em>helloworld</em>  <strong>helloworld</strong> <del>不是helloword</del></li>
+<li><blockquote>
+<p>引用</p>
+</blockquote>
+</li>
+<li>分割线（剪切线）<del>还在go</del></li>
+</ol>
+<hr>
+<ol start="5">
+<li><img src="C:\Users\123\Desktop\1.jpg" alt="陈正帅照"></li>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1NK411W7Nr/?spm_id_from=333.337.search-card.all.click&vd_source=f5b6c58c228e4308e77ac3538add4784">好康的</a></li>
+<li><pre><code>public class hello&#123;
+   public static main(String[] args)&#123;
+        System.out.print(&quot;hello,world&quot;);
+        &#125;
+    &#125;
+</code></pre>
+</li>
+</ol>
+<h3 id="java学习"><a href="#java学习" class="headerlink" title="java学习"></a>java学习</h3><ol>
+<li>java先通过javac 完成编译，编译为class文件，然后经过类加载器和字节码检查，然后通过解释器加载到操作平台上</li>
+<li>int为类型，它有一个对应的类Integer，String是类</li>
+</ol>
+<h3 id="算法学习"><a href="#算法学习" class="headerlink" title="算法学习"></a>算法学习</h3><p>四叉树交集</p>
+<ol>
+<li>代码：<pre><code class="class">public Node intersect(Node quadTree1, Node quadTree2) &#123;
+    if(quadTree1.isLeaf)&#123;
+        if(quadTree1.val)&#123;
+            return new Node(true,true);
+        &#125;
+        return new Node(quadTree2.val,quadTree2.isLeaf,quadTree2.topLeft,quadTree2.topRight,quadTree2.bottomLeft,quadTree2.bottomRight);
 
-        <div class="article-info info-on-right">
-          
-          
+    &#125;
+    if(quadTree2.isLeaf)&#123;
+        return intersect(quadTree2,quadTree1);
+    &#125;
+    Node o=intersect(quadTree1.topLeft,quadTree2.topLeft);
+    Node tw=intersect(quadTree1.topRight,quadTree2.topRight);
+    Node th=intersect(quadTree1.bottomLeft,quadTree2.bottomLeft);
+    Node f=intersect(quadTree1.bottomRight,quadTree2.bottomRight);
+    if(o.isLeaf&amp;&amp;tw.isLeaf&amp;&amp;th.isLeaf&amp;&amp;f.isLeaf&amp;&amp;o.val==tw.val&amp;&amp;tw.val==th.val&amp;&amp;th.val==f.val)&#123;
+        return new Node(o.val,true);
+    &#125;
+    return new Node(false,false,o,tw,th,f);
+    
+&#125;
+&#125;
+</code></pre>
+</li>
+</ol>
+<p>2.解释：这道题是要使两个树进行或运算，代码运用的是递归，题目中的关键是从子节点处判断。首先递归的退出条件是到达子节点，前两个if都是对此的处理，第二个if利用交换传参的方法节省了代码的书写，然后，对于不是子节点的两棵树的不同的下节点分别进行处理，若结果是值一致的子节点，则返回一个node就可，但若值不同，或者下节点并非子节点，则创造一个中间节点，并返回。</p>
 
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2024/03/03/%E6%97%A5%E8%AE%B02024-3-3/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2024/03/02/%E6%97%A5%E8%AE%B02024-3-2/" class="archive-article-date">
-  	<time datetime="2024-03-02T11:44:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-03-02</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2024/03/02/%E6%97%A5%E8%AE%B02024-3-2/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">日记2024.3.2</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2024/03/02/%E6%97%A5%E8%AE%B02024-3-2/">日记2024.3.2</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2024/03/02/My-New-Post/" class="archive-article-date">
-  	<time datetime="2024-03-02T11:43:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-03-02</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2024/03/02/My-New-Post/">My New Post</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2024/02/29/hello-world/" class="archive-article-date">
-  	<time datetime="2024-02-29T15:20:33.260Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-02-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2024/02/29/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -296,8 +380,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

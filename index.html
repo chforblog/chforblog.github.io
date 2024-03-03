@@ -152,6 +152,121 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-日记2024-3-3" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2024/03/03/%E6%97%A5%E8%AE%B02024-3-3/">日记2024.3.3</a>
+    </h1>
+  
+
+        
+        <a href="/2024/03/03/%E6%97%A5%E8%AE%B02024-3-3/" class="archive-article-date">
+  	<time datetime="2024-03-03T08:43:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-03-03</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="2024-3-3日记"><a href="#2024-3-3日记" class="headerlink" title="2024.3.3日记"></a>2024.3.3日记</h1><h2 id="编程学习"><a href="#编程学习" class="headerlink" title="编程学习"></a>编程学习</h2><h3 id="Markdown-语法"><a href="#Markdown-语法" class="headerlink" title="Markdown 语法"></a>Markdown 语法</h3><ol>
+<li>排序</li>
+<li>字体：<em>helloworld</em>  <strong>helloworld</strong> <del>不是helloword</del></li>
+<li><blockquote>
+<p>引用</p>
+</blockquote>
+</li>
+<li>分割线（剪切线）<del>还在go</del></li>
+</ol>
+<hr>
+<ol start="5">
+<li><img src="C:\Users\123\Desktop\1.jpg" alt="陈正帅照"></li>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1NK411W7Nr/?spm_id_from=333.337.search-card.all.click&vd_source=f5b6c58c228e4308e77ac3538add4784">好康的</a></li>
+<li><pre><code>public class hello&#123;
+   public static main(String[] args)&#123;
+        System.out.print(&quot;hello,world&quot;);
+        &#125;
+    &#125;
+</code></pre>
+</li>
+</ol>
+<h3 id="java学习"><a href="#java学习" class="headerlink" title="java学习"></a>java学习</h3><ol>
+<li>java先通过javac 完成编译，编译为class文件，然后经过类加载器和字节码检查，然后通过解释器加载到操作平台上</li>
+<li>int为类型，它有一个对应的类Integer，String是类</li>
+</ol>
+<h3 id="算法学习"><a href="#算法学习" class="headerlink" title="算法学习"></a>算法学习</h3><p>四叉树交集</p>
+<ol>
+<li>代码：<pre><code class="class">public Node intersect(Node quadTree1, Node quadTree2) &#123;
+    if(quadTree1.isLeaf)&#123;
+        if(quadTree1.val)&#123;
+            return new Node(true,true);
+        &#125;
+        return new Node(quadTree2.val,quadTree2.isLeaf,quadTree2.topLeft,quadTree2.topRight,quadTree2.bottomLeft,quadTree2.bottomRight);
+
+    &#125;
+    if(quadTree2.isLeaf)&#123;
+        return intersect(quadTree2,quadTree1);
+    &#125;
+    Node o=intersect(quadTree1.topLeft,quadTree2.topLeft);
+    Node tw=intersect(quadTree1.topRight,quadTree2.topRight);
+    Node th=intersect(quadTree1.bottomLeft,quadTree2.bottomLeft);
+    Node f=intersect(quadTree1.bottomRight,quadTree2.bottomRight);
+    if(o.isLeaf&amp;&amp;tw.isLeaf&amp;&amp;th.isLeaf&amp;&amp;f.isLeaf&amp;&amp;o.val==tw.val&amp;&amp;tw.val==th.val&amp;&amp;th.val==f.val)&#123;
+        return new Node(o.val,true);
+    &#125;
+    return new Node(false,false,o,tw,th,f);
+    
+&#125;
+&#125;
+</code></pre>
+</li>
+</ol>
+<p>2.解释：这道题是要使两个树进行或运算，代码运用的是递归，题目中的关键是从子节点处判断。首先递归的退出条件是到达子节点，前两个if都是对此的处理，第二个if利用交换传参的方法节省了代码的书写，然后，对于不是子节点的两棵树的不同的下节点分别进行处理，若结果是值一致的子节点，则返回一个node就可，但若值不同，或者下节点并非子节点，则创造一个中间节点，并返回。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2024/03/03/%E6%97%A5%E8%AE%B02024-3-3/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-日记2024-3-2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
